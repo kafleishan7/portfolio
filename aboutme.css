@@ -1,0 +1,70 @@
+.aboutus {
+  position: relative;
+}
+
+.aboutme1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-display: uppercase;
+  color: rgb(235, 239, 239);
+  font-weight: bold;
+  font-style: space;
+  letter-spacing: 5px;
+}
+
+
+.myexpalnation span h2{
+    color: white;
+}
+
+.myexpalnation span h3{
+    /* color: yellow; */
+    font-size: 20px;
+}
+.aboutus .myexpalnation {
+  height: 70vh;
+}
+
+.myexpalnation {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.myexpalnation p {
+}
+
+.aboutus .about_animation {
+  transition: ease-in-out 1.5s;
+  position: absolute;
+  /* top: 2000px; */
+  left: 50%;
+  margin: -560px auto 0 auto;
+  background-color: rgb(250, 172, 27);
+  height: 5px;
+  width: 0px;
+}
+
+.aboutus h1:hover ~ .about_animation,
+.myexpalnation:hover ~ .about_animation,
+.about_animation:hover ~ .about_animation {
+  display: block;
+
+  border-radius: 5px;
+  left: 44.5%;
+  width: 170px;
+}
+/*
+.contactme_main span {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-display: uppercase;
+  color: aqua;
+  font-weight: bold;
+  font-style: space;
+  /* text-indent: 50px; 
+  letter-spacing: 5px;
+}
+*/

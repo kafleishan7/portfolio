@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: rgb(8, 3, 3);
+    overflow-x: hidden;
+  }
+
+  .main {
+    background: rgb(8, 3, 3);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  nav {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .navigation .logo {
+    height: 50px;
+    width: 10.5vw;
+    position: fixed;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(181, 242, 242);
+    font-size: 30px;
+    z-index: 0;
+    /* background: rgb(3, 5, 11); */
+    padding: 10px;
+    left: 100px;
+    border-radius: 10px;
+  }
+
+  .animationlogo {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 10px;
+    border-radius: 10px;
+    background: blue;
+    transition: all 10s ease 2s;
+    animation-delay: 2s;
+    display: block;
+  }
+
+  .animationlogo {
+    position: absolute;
+    height: 10%;
+    left: 50%;
+    bottom: 5%;
+    z-index: 1;
+    width: 0px;
+    border-radius: 10px;
+    background: rgb(251, 166, 9);
+    transition: all 1s ease 0s;
+    display: block;
+  }
+
+  .logo span:hover ~ .animationlogo {
+    left: 7%;
+    display: block;
+    width: 150px;
+  }
+
+  .logo span:hover {
+    cursor: pointer;
+  }
+
+  .logo span {
+    text-shadow: 1px 1px 1px rgb(22, 178, 206);
+  }
+
+  nav {
+    width: 100vw;
+    height: 5px;
+    background: #34495e;
+    border-radius: 8px;
+    font-size: 10;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  nav .navigation {
+    height: 80px;
+    position: relative;
+    align-items: center;
+    background-color: rgb(218, 238, 238);
+    display: flex;
+    justify-content: right;
+  }
+
+  nav .navigation ul {
+    right: 2%;
+    /* background: red; */
+    width: 700px;
+    height: 50px;
+    position: relative;
+    list-style: none;
+    text-transform: uppercase;
+    color: rgb(34, 20, 20);
+    text-decoration: none;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    display: inline-flex;
+    
+  }
+
+  
+
+  nav .navigation ul a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 30px;
+    text-transform: uppercase;
+    color: rgb(29, 9, 9);
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: inline-block;
+  }
+
+  nav .navigation .animation {
+    /* right: 616px; */
+    right: 578px;
+    position: absolute;
+    height: 10%;
+    top: 42px;
+    z-index: 1;
+    background-color: rgb(251, 166, 9);
+    width: 80px;
+    border-radius: 10px;
+    transition: all 1.3s ease 0s;
+  }
+
+  /* nav .navigation a:hover~.navigation{
+        background: white;
+      
+    } */
+
+  nav .navigation a:nth-child(1) {
+    /* width: 50px; */
+    /* background: red; */
+  }
+
+  nav .navigation .home .start-home,
+  a:nth-child(1):hover ~ .animation {
+    /* background: red; */
+    right: 578px;
+  }
+
+  nav .navigation a:nth-child(2) {
+    width: 50px;
+    /* background: black; */
+  }
+
+  nav .navigation .skills .start-skills,
+  a:nth-child(2):hover ~ .animation {
+    /* background: red; */
+    right: 447px;
+  }
+
+  nav .navigation a:nth-child(3) {
+    width: 85px;
+    /* background: green; */
+  }
+
+  nav .navigation .aboutme .start-aboutme,
+  a:nth-child(3):hover ~ .animation {
+    /* background: red; */
+    right: 332px;
+    width: 80px;
+  }
+
+  nav .navigation a:nth-child(4) {
+    width: 110px;
+    padding: 0px 20px;
+    /* background:yellow; */
+  }
+
+  nav .navigation .contactme .start-contactme,
+  a:nth-child(4):hover ~ .animation {
+    /* background: red; */
+    right: 175px;
+    width: 100px;
+  }
+
+  nav .navigation a:nth-child(5) {
+    width: 70px;
+    /* background: purple; */
+  }
+
+  nav .navigation .projects .start-projects,
+  a:nth-child(5):hover ~ .animation {
+    /* background: red; */
+    right: 13px;
+    width: 110px;
+  }
+
+  body.main :hover ~ .lineanimation2 {
+    cursor: pointer;
+    display: flex;
+    display: block;
+    cursor: pointer;
+    background: red;
+    display: block;
+    width: 100vw;
+    color: red;
+  }
+
+  .container {
+    height: 90vh;
+    /* background: black; */
+    /* height: auto; */
+  }
+
+  .intro {
+    left: 20%;
+    top: 35%;
+    /* background: red; */
+    position: absolute;
+    font-size: 25px;
+    font-style: oblique;
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+  }
+
+  .intro .span_1 {
+    text-shadow: -2px 2px 2px rgb(113, 9, 9);
+    font-size: 50px;
+    color: rgb(48, 217, 217);
+  }
+
+  .intro .span_2 {
+    color: rgb(21, 121, 168);
+    text-shadow: -2px 2px 2px rgb(197, 208, 222);
+  }
+
+  .intro .span_3 {
+    margin-top: -43px;
+    margin-left: 130px;
+    color: rgb(248, 249, 240);
+    text-shadow: -2px 2px 2px rgb(16, 67, 138);
+  }
+
+  .container .image {
+    display: flex;
+
+    top: 5%;
+    justify-content: right;
+    margin-top: 50px;
+    margin-right: 10px;
+
+    border-radius: 50px;
+  }
+
+  .image #img1 {
+    margin-right: 5%;
+    margin-top: 150px;
+    top: 10%;
+    border: rgba(162, 201, 237, 0.933) 10px solid;
+    border-radius: 300px;
+  }
+  .sociallink img:hover {
+    margin-top: -10px;
+  }
+
+
+  .sociallink a img {
+    display: inline-flex;
+    /* position:fixed; */
+  }
+  .sociallink img:hover {
+    /* position:absolute; */
+
+    margin-top: -10px;
+  }
+  .sociallink img {
+    /* margin-bottom: -100px; */
+  }
+
+  .hidesodiallink {
+    display: none;
+  }
+
+  .sociallink {
+    position: fixed;
+  }

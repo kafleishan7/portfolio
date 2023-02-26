@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c3e50;
+        }
+
+        nav{
+            position:relative;
+            margin: 270px auto 0;
+            width: 590px;
+            height: 50px;
+            background: #34495e;            
+            border-radius: 8px;
+            font-size: 10;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0,.1);
+        }
+
+        nav a{
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height:50px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+
+        }
+
+        nav .animation{
+
+            position: absolute;
+            height: 10%;
+            bottom: 0;
+            z-index: 0;
+            background-color: red;
+            width: 100px;
+            border-radius: 10px;
+            transition: all .5s ease 0s;
+
+        }
+
+
+
+        a:nth-child(1){
+            width: 100px;
+        }
+        
+        nav .start-home, a:nth-child(1):hover~.animation{
+            
+            width: 100px;
+            left: 100px;
+        }
+
+
+        a:nth-child(2){
+            width: 110px;
+        }
+
+        nav .start-about, a:nth-child(2):hover~.animation{
+            width: 100px;
+            left: 100px;
+        }
+
+        a:nth-child(3){
+            width: 110px;
+        }
+
+        nav .start-Kafle, a:nth-child(3):hover~.animation{
+            width: 100px;
+            left: 220px;
+        }
+
+        a:nth-child(4){
+            width: 110px;
+        }
+        nav .start-ishan, a:nth-child(4):hover~.animation{
+            width: 100px;
+            left: 330px;
+        }
+        a:nth-child(5){
+            width: 110px;
+        }
+
+        nav .start-contactme, a:nth-child(5):hover~.animation{
+            width: 130px;
+            left: 440px;
+        }
+        nav .start-home, a:nth-child(1):hover~.animation{
+            width: 100px;
+            left: 0px;
+        }
+
+        
+
+        /* a:nth-child(5){
+            width: 1140px;
+        } */
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Kafle</a>
+        <a href="#">Ishan</a>
+        <a href="#">Contact me</a>
+        <div class="animation start-home"></div>
+    </nav>
+</body>
+</html>

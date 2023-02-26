@@ -1,0 +1,185 @@
+.contactme_main{
+	/* height: 650px; */
+	/* position: relative; */
+	/* background: red; */
+}
+.contact_animation {
+	/* position: sticky; */
+	margin: 0px auto 0 auto;
+	background-color: rgb(250, 172, 27);
+	height: 20px;
+	width: 0px;
+	transition:ease 1s;
+
+  
+	border-radius: 5px;
+  }
+  .contactme_main:hover~.contact_animation,.contactme_main >.box:hover~.contact_animation,.contactme_main span:hover~.contact_animation {
+	  width: 200px;
+	  left: 44%;
+  
+  }
+
+.contactme_main >.box 
+{
+	margin: 50px 200px auto 1000px;
+
+	position: absolute;
+
+	width: 380px;
+	height: 420px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.contactme_main > .box::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute; 
+	top: -50%;
+	margin-left: -200px;
+	/* left: 50%; */
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	animation: animatee 6s linear infinite;
+}
+.contactme_main .box::after 
+{
+	margin-left: -200px;
+
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	/* left: 50%; */
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	animation: animatee 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animatee 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+.contactme_main form 
+{
+	position: absolute;
+	inset: 2px;
+	background: #28292d;
+	padding: 50px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+.contactme_main h3 
+{
+	color: #45f3ff;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 140%;
+}
+.contactme_main .inputBox 
+{
+	position: relative;
+	width: 300px;
+	margin-top: 35px;
+}
+.contactme_main .inputBox input 
+{
+	position: relative;
+	width: 100%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: #23242a;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+.contactme_main .inputBox span 
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #8f8f8f;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+.contactme_main .inputBox input:valid ~ span,
+.inputBox input:focus ~ span 
+{
+	color: #45f3ff;
+	transform: translateX(0px) translateY(-34px);
+	font-size: 0.75em;
+}
+.inputBox i 
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #45f3ff;
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+.contactme_main .inputBox input:valid ~ i,
+.contactme_main .inputBox input:focus ~ i 
+{
+	height: 44px;
+}
+.contactme_main .links 
+{
+	display: flex;
+	justify-content: space-between;
+}
+.contactme_main .links a 
+{
+	margin: 60px 0;
+	font-size: 0.75em;
+	color: #8f8f8f;
+	text-decoration: beige;
+}
+.contactme_main .links a:hover, 
+.contactme_main .links a:nth-child(2)
+{
+	color: #45f3ff;
+}
+.contactme_main input[type="submit"]
+{
+	border: none;
+	outline: none;
+	padding: 11px 25px;
+	background: #45f3ff;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: 600;
+	width: 100px;
+	margin-top: -20px;
+}
+.contactme_main input[type="submit"]:active 
+{
+	opacity: 0.8;
+}
